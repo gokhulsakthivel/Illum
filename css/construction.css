@@ -1,0 +1,154 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.8em;
+}
+
+.logobar {
+  background-color: grey;
+  width: 100%;
+  height: 10%;
+  z-index: 10;
+}
+.logo{
+  text-transform: uppercase;
+  padding:2% 0%;
+  text-align: center;
+}
+
+
+@media (min-width:768px) {
+  .container-1{
+    display: flex;
+    height: 100%;
+  }
+
+  .aside{
+    flex:1
+  }
+  .ascene{
+    flex:4;
+
+  }
+  .aside{
+  background: linear-gradient(30deg,grey,skyblue) ;
+    padding: 20px;
+  }
+
+  .aside h1{
+      text-align: center;
+      font-family: 'roboto',sans-serif;
+      font-size: 25px;
+      color: white;
+  }
+  .aside p{
+      text-align: center;
+      padding: 5px;
+      font-size:12px;
+      font-family: monospace;
+      color: white;
+  }
+  .container-2{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 5px;
+  }
+  .container-2 input{
+    border: none;
+    text-align: center;
+  }
+  .container-2 button{
+    border: none;
+    text-align: center;
+  }
+  .container-2 button{
+    margin:  5px;
+    padding: 0px 15px;
+    color: white;
+    background: skyblue ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+  .container-1{
+    display: flex;
+    height: 100%;
+  }
+
+  .aside{
+    flex:1.5;
+  }
+  .ascene{
+    flex:4;
+
+  }
+  .aside{
+  background: linear-gradient(30deg,grey,skyblue) ;
+    padding: 5px;
+  }
+
+  .aside h1{
+      text-align: center;
+      font-family: 'roboto',sans-serif;
+      font-size: 15px;
+      color: white;
+  }
+  .aside p{
+      text-align: center;
+      padding: 5px;
+      font-size:6px;
+      font-family: monospace;
+      color: white;
+  }
+  .container-2{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 5px;
+  }
+  .container-2 label{
+
+  }
+  .container-2 input{
+    border: none;
+    width: 95%;
+    text-align: center;
+  }
+  .container-2 button{
+    border: none;
+    width: 75%;
+  }
+  .container-2 button{
+  margin: 10px;
+    padding: 0px 15px;
+    color: white;
+    background: skyblue ;
+  }
+
+}
+
+
+/*
+@media (max-width:768px) {
+.container-2 {
+  display: flex;
+    /* align-items: center;
+    justify-content: space-between;
+}
+}*/
+
+
+@import "@material/button/mdc-button";
