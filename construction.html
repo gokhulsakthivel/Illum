@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/construction.css">
+  <link rel="stylesheet" href="css/material.min.css">
+  <script src="js\aframe.min.js"></script>
+  <script src="js\angular.min.js"></script>
+  <script>
+
+  var sceneEl = document.querySelector('a-scene');
+  AFRAME.registerComponent('foo', {
+    init: function () {
+      console.log(this.el.sceneEl);  // Reference to the scene element.
+    }
+  });
+
+  </script>
+</head>
+<body>
+  <!--<header class="logobar">
+      <p class="logo">illuted house</p>
+  </header>-->
+
+  <section class="container-1">
+    
+    <section class="aside">
+      <h1>Illum</h1>
+      <p>
+        Illum is a web-app which help you to live in your DREAM HOME.<br>I want you guys to get your dreams come true.<br>
+        You can provide the respected values to get your dream home.
+      </p>
+
+      <div class="container-2">
+        <form class="" action="" method="">
+          <label for="Length">Length</label><br>
+          <input type="number" name="Length" value="" ng-model="Length" placeholder="5">
+          <p>My first expression: {{Length}}</p>
+          <br>
+          <label for="Rotation">Rotation</label><br>
+          <input type="number" name="Rotation" value="" ng-model="Rotation" placeholder="90">
+          <br>
+          <label for="position">position</label><br>
+          <input type="numberz" name="position" value="" placeholder="0  5  5">
+          <br>
+
+          <button type="button" name="button" class=".mdc-button">Wall</button>
+          </div>
+        </form>
+
+    </section>
+
+         
+    <a-scene class="ascene"  log="Hello, Scene!" ng-app=""></a-scene>
+      </form><a-sky color=""></a-sky>
+         
+          <a-camera position="0 60 0" rotation="-90 0 0"> <a-cursor color="blue" /> </a-camera>
+          <a-box color="skyblue" height="10" width="{{length}}" depth="0.2" position="0 5 -9.5" opacity="0.7" rotation="0 0 0"></a-box>
+    </a-scene>
+  </section>
+
+
+
+</body>
+</html>
